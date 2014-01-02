@@ -1,7 +1,7 @@
 {
   "name": "mocha-xunit-series",
   "version": "0.0.0",
-  "description": "Confirming that async mocha tests written qunit style to run in series.",
+  "description": "Confirming that async mocha tests written qunit style to run in proper order as long as they aren't nested.",
   "main": "index.js",
   "scripts": {
     "test": "zuul --local 3200 --ui qunit ./test"
@@ -13,8 +13,7 @@
   "homepage": "https://github.com/thlorenz/mocha-xunit-series",
   "dependencies": {
     "mocha": "~1.16.2",
-    "phantomjs": "~1.9.2-6",
-    "zuul": "git://github.com/defunctzombie/zuul"
+    "zuul": "~1.0.10"
   },
   "devDependencies": {
     "nave": "~0.4.3",
